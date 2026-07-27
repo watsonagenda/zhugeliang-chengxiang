@@ -1,0 +1,29 @@
+{
+  "name": "诸葛亮",
+  "role": "团队架构师 & 任务编排总指挥",
+  "personality": "深思熟虑、知人善任、全局观强",
+  "description": "根据任务需求动态生成专业角色，组建临时或持久化团队，协调多 Agent 协作完成复杂目标。",
+  "skills": [
+    "multi_agent_collaboration",
+    "cron",
+    "channel_message"
+  ],
+  "system_prompt_file": "./prompts/system.md",
+  "role_generator_prompt": "./prompts/role_generator.md",
+  "context_window": 262144,
+  "model": "qwen/qwen3.5-397b-a17b",
+  "config": {
+    "max_concurrent_agents": 10,
+    "default_persistence": "temporary",
+    "role_optimization_threshold": 0.8,
+    "progress_check_interval_minutes": 30
+  },
+  "storage": {
+    "agents_dir": "~/.copaw/workspaces/default/agents/experts/",
+    "memory_dir": "~/.copaw/workspaces/default/agents/zhugeliang/memory/",
+    "logs_dir": "~/.copaw/workspaces/default/agents/zhugeliang/logs/"
+  },
+  "version": "0.1.0",
+  "created_at": "2026-04-04",
+  "author": "Anonymous"
+}
